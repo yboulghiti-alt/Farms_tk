@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -62,9 +62,9 @@
             gap: 20px;
         }
 
-        /* تنسيق منطقة البحث والقائمة المنسدلة */
+      
         .gpu-selector {
-            position: relative; /* ضروري لتموضع القائمة تحته */
+            position: relative; 
         }
 
         .gpu-label {
@@ -102,7 +102,7 @@
             border-color: var(--accent-blue);
         }
 
-        /* تصميم القائمة المنسدلة للاقتراحات */
+       
         .autocomplete-list {
             position: absolute;
             top: 100%;
@@ -115,7 +115,7 @@
             max-height: 250px;
             overflow-y: auto;
             border-radius: 0 0 5px 5px;
-            display: none; /* مخفية افتراضياً */
+            display: none; 
         }
 
         .autocomplete-item {
@@ -132,7 +132,7 @@
             color: #000;
         }
 
-        /* تخصيص العمود الثاني (B) */
+        
         #col-b .gpu-label { border-color: var(--accent-red); color: var(--accent-red); }
         #col-b .gpu-label:hover { background: rgba(255, 51, 51, 0.1); box-shadow: 0 0 10px rgba(255, 51, 51, 0.3); }
         #col-b input:focus { border-color: var(--accent-red); }
@@ -195,7 +195,6 @@
 </head>
 <body>
 
-<script> atOptions = { 'key' : '4dde258992151dfabd6674f3c99f3330', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} }; </script> <script src="https://www.highperformanceformat.com/4dde258992151dfabd6674f3c99f3330/invoke.js"></script>
     <header>
         <h1 class="brand-name">Farms TK</h1>
         <p style="opacity: 0.7;">Modern GPU Comparison Tool</p>
@@ -217,11 +216,11 @@
             </div>
 
             <div class="specs-box">
-                <div class="spec-row"><span class="spec-label">الشركة</span><span class="spec-value" id="spec-a-man">-</span></div>
-                <div class="spec-row"><span class="spec-label">المعمارية</span><span class="spec-value" id="spec-a-arch">-</span></div>
+                <div class="spec-row"><span class="spec-label">Company</span><span class="spec-value" id="spec-a-man">-</span></div>
+                <div class="spec-row"><span class="spec-label">ا Architecture</span><span class="spec-value" id="spec-a-arch">-</span></div>
                 <div class="spec-row"><span class="spec-label">VRAM</span><span class="spec-value" id="spec-a-vram">-</span></div>
-                <div class="spec-row"><span class="spec-label">نوع الذاكرة</span><span class="spec-value" id="spec-a-type">-</span></div>
-                <div class="spec-row"><span class="spec-label">سرعة الذاكرة</span><span class="spec-value" id="spec-a-speed">-</span></div>
+                <div class="spec-row"><span class="spec-label">Memory type </span><span class="spec-value" id="spec-a-type">-</span></div>
+                <div class="spec-row"><span class="spec-label">Memory speed</span><span class="spec-value" id="spec-a-speed">-</span></div>
                 <div class="spec-row"><span class="spec-label">Bus Width</span><span class="spec-value" id="spec-a-bus">-</span></div>
                 <div class="spec-row"><span class="spec-label">TDP</span><span class="spec-value" id="spec-a-tdp">-</span></div>
             </div>
@@ -251,11 +250,11 @@
             </div>
 
             <div class="specs-box">
-                <div class="spec-row"><span class="spec-label">الشركة</span><span class="spec-value" id="spec-b-man">-</span></div>
-                <div class="spec-row"><span class="spec-label">المعمارية</span><span class="spec-value" id="spec-b-arch">-</span></div>
+                <div class="spec-row"><span class="spec-label">Company</span><span class="spec-value" id="spec-b-man">-</span></div>
+                <div class="spec-row"><span class="spec-label">Architecture</span><span class="spec-value" id="spec-b-arch">-</span></div>
                 <div class="spec-row"><span class="spec-label">VRAM</span><span class="spec-value" id="spec-b-vram">-</span></div>
-                <div class="spec-row"><span class="spec-label">نوع الذاكرة</span><span class="spec-value" id="spec-b-type">-</span></div>
-                <div class="spec-row"><span class="spec-label">سرعة الذاكرة</span><span class="spec-value" id="spec-b-speed">-</span></div>
+                <div class="spec-row"><span class="spec-label">Memory type </span><span class="spec-value" id="spec-b-type">-</span></div>
+                <div class="spec-row"><span class="spec-label">Memory speed</span><span class="spec-value" id="spec-b-speed">-</span></div>
                 <div class="spec-row"><span class="spec-label">Bus Width</span><span class="spec-value" id="spec-b-bus">-</span></div>
                 <div class="spec-row"><span class="spec-label">TDP</span><span class="spec-value" id="spec-b-tdp">-</span></div>
             </div>
@@ -272,7 +271,7 @@
         </div>
 
         <div class="comparison-bar-section">
-            <h2>النتيجة النهائية (Performance Index)</h2>
+            <h2>Performance Index</h2>
             <div class="progress-container">
                 <span class="vs-badge" style="color: var(--accent-blue)">A</span>
                 <div class="p-bar-bg"><div class="p-bar-fill" id="bar-a" style="width: 0%;">0%</div></div>
@@ -281,7 +280,7 @@
                 <span class="vs-badge" style="color: var(--accent-red)">B</span>
                 <div class="p-bar-bg"><div class="p-bar-fill" id="bar-b" style="width: 0%;">0%</div></div>
             </div>
-            <div class="diff-text" id="diff-result">اختر كرتين للمقارنة</div>
+            <div class="diff-text" id="diff-result">Choose your cards and compare them with us </div>
         </div>
 
     </div>
@@ -292,51 +291,113 @@
         // ==========================================
         const gpuDatabase = [
             // --- NVIDIA 50 Series (Theoretical/Future) ---
-            { name: "NVIDIA GeForce RTX 5090", manufacturer: "NVIDIA", arch: "Blackwell", vram: "32 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "512-bit", tdp: "500W", furmark: { L: 900, M: 700, U: 500 }, games: { "CS:GO": {L:999,M:900,U:800}, "GTA V": {L:250,M:220,U:200}, "Far Cry 5": {L:260,M:240,U:220}, "Dota 2": {L:450,M:400,U:350}, "Fortnite": {L:500,M:450,U:300}, "The Witcher 3": {L:350,M:300,U:250} } },
+
+
+{ name: "NVIDIA GeForce RTX 5090", manufacturer: "NVIDIA", arch: "Blackwell", vram: "32 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "512-bit", tdp: "500W", furmark: { L: 900, M: 700, U: 500 }, games: { "CS:GO": {L:999,M:900,U:800}, "GTA V": {L:250,M:220,U:200}, "Far Cry 5": {L:260,M:240,U:220}, "Dota 2": {L:450,M:400,U:350}, "Fortnite": {L:500,M:450,U:300}, "The Witcher 3": {L:350,M:300,U:250} } },
+{ name: "NVIDIA GeForce RTX 5080", manufacturer: "NVIDIA", arch: "Blackwell", vram: "16 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "256-bit", tdp: "400W", furmark: { L: 750, M: 580, U: 420 }, games: { "CS:GO": {L:950,M:850,U:750}, "GTA V": {L:220,M:190,U:170}, "Far Cry 5": {L:230,M:210,U:190}, "Dota 2": {L:400,M:360,U:320}, "Fortnite": {L:450,M:400,U:280}, "The Witcher 3": {L:300,M:260,U:220} } },
+{ name: "NVIDIA GeForce RTX 5070 Ti", manufacturer: "NVIDIA", arch: "Blackwell", vram: "16 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "192-bit", tdp: "300W", furmark: { L: 620, M: 480, U: 350 }, games: { "CS:GO": {L:900,M:800,U:700}, "GTA V": {L:200,M:175,U:155}, "Far Cry 5": {L:210,M:190,U:170}, "Dota 2": {L:380,M:330,U:290}, "Fortnite": {L:410,M:360,U:260}, "The Witcher 3": {L:270,M:235,U:200} } },
+{ name: "NVIDIA GeForce RTX 5070", manufacturer: "NVIDIA", arch: "Blackwell", vram: "12 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "192-bit", tdp: "250W", furmark: { L: 550, M: 420, U: 300 }, games: { "CS:GO": {L:850,M:750,U:650}, "GTA V": {L:180,M:160,U:140}, "Far Cry 5": {L:190,M:170,U:150}, "Dota 2": {L:350,M:310,U:270}, "Fortnite": {L:380,M:330,U:240}, "The Witcher 3": {L:240,M:210,U:180} } },
+{ name: "NVIDIA GeForce RTX 5060 Ti", manufacturer: "NVIDIA", arch: "Blackwell", vram: "12 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "128-bit", tdp: "200W", furmark: { L: 450, M: 340, U: 250 }, games: { "CS:GO": {L:780,M:680,U:580}, "GTA V": {L:160,M:140,U:120}, "Far Cry 5": {L:170,M:150,U:130}, "Dota 2": {L:310,M:270,U:230}, "Fortnite": {L:340,M:290,U:210}, "The Witcher 3": {L:210,M:180,U:150} } },
+{ name: "NVIDIA GeForce RTX 5060", manufacturer: "NVIDIA", arch: "Blackwell", vram: "8 GB", memType: "GDDR7", memSpeed: "28 Gbps", bus: "128-bit", tdp: "170W", furmark: { L: 380, M: 290, U: 210 }, games: { "CS:GO": {L:700,M:600,U:500}, "GTA V": {L:140,M:120,U:100}, "Far Cry 5": {L:150,M:130,U:110}, "Dota 2": {L:280,M:240,U:200}, "Fortnite": {L:300,M:250,U:180}, "The Witcher 3": {L:180,M:150,U:120} } },
+{ name: "NVIDIA GeForce RTX 5050", manufacturer: "NVIDIA", arch: "Blackwell", vram: "8 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "128-bit", tdp: "120W", furmark: { L: 280, M: 200, U: 150 }, games: { "CS:GO": {L:550,M:450,U:350}, "GTA V": {L:110,M:90,U:75}, "Far Cry 5": {L:120,M:100,U:85}, "Dota 2": {L:220,M:180,U:150}, "Fortnite": {L:230,M:190,U:140}, "The Witcher 3": {L:140,M:110,U:90} } },
             
             // --- NVIDIA 40 Series ---
-            { name: "NVIDIA GeForce RTX 4090", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "24 GB", memType: "GDDR6X", memSpeed: "21 Gbps", bus: "384-bit", tdp: "450W", furmark: { L: 650, M: 480, U: 320 }, games: { "CS:GO": {L:900,M:800,U:600}, "GTA V": {L:188,M:160,U:140}, "Far Cry 5": {L:200,M:180,U:160}, "Dota 2": {L:350,M:300,U:240}, "Fortnite": {L:400,M:320,U:200}, "The Witcher 3": {L:280,M:220,U:150} } },
-            { name: "NVIDIA GeForce RTX 4080", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "16 GB", memType: "GDDR6X", memSpeed: "22.4 Gbps", bus: "256-bit", tdp: "320W", furmark: { L: 550, M: 400, U: 280 }, games: { "CS:GO": {L:800,M:700,U:550}, "GTA V": {L:170,M:145,U:125}, "Far Cry 5": {L:180,M:160,U:140}, "Dota 2": {L:320,M:280,U:220}, "Fortnite": {L:360,M:290,U:180}, "The Witcher 3": {L:240,M:190,U:130} } },
-            { name: "NVIDIA GeForce RTX 4070 Ti", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "12 GB", memType: "GDDR6X", memSpeed: "21 Gbps", bus: "192-bit", tdp: "285W", furmark: { L: 480, M: 350, U: 240 }, games: { "CS:GO": {L:700,M:600,U:480}, "GTA V": {L:160,M:130,U:110}, "Far Cry 5": {L:160,M:140,U:120}, "Dota 2": {L:300,M:260,U:200}, "Fortnite": {L:320,M:250,U:160}, "The Witcher 3": {L:210,M:170,U:115} } },
-            { name: "NVIDIA GeForce RTX 4060", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "8 GB", memType: "GDDR6", memSpeed: "17 Gbps", bus: "128-bit", tdp: "115W", furmark: { L: 300, M: 220, U: 150 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:140,M:110,U:85}, "Far Cry 5": {L:130,M:110,U:90}, "Dota 2": {L:220,M:190,U:150}, "Fortnite": {L:250,M:180,U:120}, "The Witcher 3": {L:150,M:120,U:80} } },
+{ name: "NVIDIA GeForce RTX 4090", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "24 GB", memType: "GDDR6X", memSpeed: "21 Gbps", bus: "384-bit", tdp: "450W", furmark: { L: 820, M: 650, U: 480 }, games: { "CS:GO": {L:999,M:900,U:800}, "GTA V": {L:230,M:200,U:180}, "Far Cry 5": {L:240,M:220,U:200}, "Dota 2": {L:420,M:380,U:340}, "Fortnite": {L:480,M:420,U:280}, "The Witcher 3": {L:320,M:280,U:230} } },
+{ name: "NVIDIA GeForce RTX 4080", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "16 GB", memType: "GDDR6X", memSpeed: "22.4 Gbps", bus: "256-bit", tdp: "320W", furmark: { L: 680, M: 520, U: 380 }, games: { "CS:GO": {L:900,M:800,U:700}, "GTA V": {L:200,M:170,U:150}, "Far Cry 5": {L:210,M:190,U:170}, "Dota 2": {L:380,M:340,U:300}, "Fortnite": {L:420,M:370,U:250}, "The Witcher 3": {L:280,M:240,U:200} } },
+{ name: "NVIDIA GeForce RTX 4070 Ti", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "12 GB", memType: "GDDR6X", memSpeed: "21 Gbps", bus: "192-bit", tdp: "285W", furmark: { L: 580, M: 450, U: 320 }, games: { "CS:GO": {L:850,M:750,U:650}, "GTA V": {L:185,M:160,U:140}, "Far Cry 5": {L:195,M:175,U:155}, "Dota 2": {L:350,M:310,U:270}, "Fortnite": {L:390,M:340,U:230}, "The Witcher 3": {L:250,M:210,U:180} } },
+{ name: "NVIDIA GeForce RTX 4070", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "12 GB", memType: "GDDR6X", memSpeed: "21 Gbps", bus: "192-bit", tdp: "200W", furmark: { L: 500, M: 380, U: 270 }, games: { "CS:GO": {L:800,M:700,U:600}, "GTA V": {L:170,M:150,U:130}, "Far Cry 5": {L:180,M:160,U:140}, "Dota 2": {L:320,M:280,U:240}, "Fortnite": {L:350,M:300,U:210}, "The Witcher 3": {L:220,M:190,U:160} } },
+{ name: "NVIDIA GeForce RTX 4060 Ti", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "8 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "128-bit", tdp: "160W", furmark: { L: 420, M: 320, U: 230 }, games: { "CS:GO": {L:750,M:650,U:550}, "GTA V": {L:150,M:130,U:110}, "Far Cry 5": {L:160,M:140,U:120}, "Dota 2": {L:290,M:250,U:210}, "Fortnite": {L:320,M:270,U:190}, "The Witcher 3": {L:190,M:160,U:130} } },
+{ name: "NVIDIA GeForce RTX 4060", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "8 GB", memType: "GDDR6", memSpeed: "17 Gbps", bus: "128-bit", tdp: "115W", furmark: { L: 350, M: 270, U: 190 }, games: { "CS:GO": {L:680,M:580,U:480}, "GTA V": {L:130,M:115,U:95}, "Far Cry 5": {L:140,M:125,U:105}, "Dota 2": {L:260,M:220,U:180}, "Fortnite": {L:280,M:240,U:170}, "The Witcher 3": {L:160,M:135,U:110} } },
+{ name: "NVIDIA GeForce RTX 4050", manufacturer: "NVIDIA", arch: "Ada Lovelace", vram: "6 GB", memType: "GDDR6", memSpeed: "16 Gbps", bus: "96-bit", tdp: "75W", furmark: { L: 260, M: 190, U: 140 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:100,M:85,U:70}, "Far Cry 5": {L:110,M:95,U:80}, "Dota 2": {L:200,M:170,U:140}, "Fortnite": {L:210,M:180,U:130}, "The Witcher 3": {L:130,M:105,U:85} } },
 
             // --- NVIDIA 30 Series ---
             { name: "NVIDIA GeForce RTX 3090", manufacturer: "NVIDIA", arch: "Ampere", vram: "24 GB", memType: "GDDR6X", memSpeed: "19.5 Gbps", bus: "384-bit", tdp: "350W", furmark: { L: 580, M: 420, U: 290 }, games: { "CS:GO": {L:850,M:750,U:580}, "GTA V": {L:175,M:150,U:130}, "Far Cry 5": {L:185,M:165,U:145}, "Dota 2": {L:330,M:290,U:230}, "Fortnite": {L:380,M:300,U:190}, "The Witcher 3": {L:250,M:200,U:140} } },
-            { name: "NVIDIA GeForce RTX 3080", manufacturer: "NVIDIA", arch: "Ampere", vram: "10 GB", memType: "GDDR6X", memSpeed: "19 Gbps", bus: "320-bit", tdp: "320W", furmark: { L: 500, M: 380, U: 260 }, games: { "CS:GO": {L:750,M:650,U:500}, "GTA V": {L:165,M:140,U:120}, "Far Cry 5": {L:170,M:150,U:130}, "Dota 2": {L:310,M:270,U:210}, "Fortnite": {L:340,M:270,U:170}, "The Witcher 3": {L:230,M:180,U:120} } },
-            { name: "NVIDIA GeForce RTX 3070", manufacturer: "NVIDIA", arch: "Ampere", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "220W", furmark: { L: 400, M: 300, U: 200 }, games: { "CS:GO": {L:600,M:500,U:400}, "GTA V": {L:150,M:125,U:100}, "Far Cry 5": {L:150,M:130,U:110}, "Dota 2": {L:260,M:230,U:180}, "Fortnite": {L:290,M:220,U:140}, "The Witcher 3": {L:190,M:150,U:100} } },
-            { name: "NVIDIA GeForce RTX 3060", manufacturer: "NVIDIA", arch: "Ampere", vram: "12 GB", memType: "GDDR6", memSpeed: "15 Gbps", bus: "192-bit", tdp: "170W", furmark: { L: 280, M: 200, U: 130 }, games: { "CS:GO": {L:400,M:300,U:200}, "GTA V": {L:140,M:100,U:70}, "Far Cry 5": {L:110,M:90,U:65}, "Dota 2": {L:180,M:150,U:120}, "Fortnite": {L:160,M:120,U:80}, "The Witcher 3": {L:100,M:80,U:55} } },
-            { name: "NVIDIA GeForce RTX 3050", manufacturer: "NVIDIA", arch: "Ampere", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "128-bit", tdp: "130W", furmark: { L: 200, M: 150, U: 90 }, games: { "CS:GO": {L:300,M:220,U:150}, "GTA V": {L:110,M:85,U:60}, "Far Cry 5": {L:90,M:70,U:50}, "Dota 2": {L:150,M:120,U:90}, "Fortnite": {L:130,M:100,U:60}, "The Witcher 3": {L:80,M:60,U:40} } },
-
+{ name: "NVIDIA GeForce RTX 3080", manufacturer: "NVIDIA", arch: "Ampere", vram: "10 GB", memType: "GDDR6X", memSpeed: "19 Gbps", bus: "320-bit", tdp: "320W", furmark: { L: 500, M: 380, U: 260 }, games: { "CS:GO": {L:750,M:650,U:500}, "GTA V": {L:165,M:140,U:120}, "Far Cry 5": {L:170,M:150,U:130}, "Dota 2": {L:310,M:270,U:210}, "Fortnite": {L:340,M:270,U:170}, "The Witcher 3": {L:230,M:180,U:130} } },
+{ name: "NVIDIA GeForce RTX 3070 Ti", manufacturer: "NVIDIA", arch: "Ampere", vram: "8 GB", memType: "GDDR6X", memSpeed: "19 Gbps", bus: "256-bit", tdp: "290W", furmark: { L: 460, M: 340, U: 240 }, games: { "CS:GO": {L:700,M:600,U:480}, "GTA V": {L:150,M:130,U:110}, "Far Cry 5": {L:160,M:140,U:120}, "Dota 2": {L:290,M:250,U:200}, "Fortnite": {L:320,M:250,U:160}, "The Witcher 3": {L:200,M:165,U:120} } },
+{ name: "NVIDIA GeForce RTX 3070", manufacturer: "NVIDIA", arch: "Ampere", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "220W", furmark: { L: 420, M: 320, U: 220 }, games: { "CS:GO": {L:680,M:580,U:450}, "GTA V": {L:140,M:120,U:100}, "Far Cry 5": {L:150,M:130,U:110}, "Dota 2": {L:270,M:230,U:180}, "Fortnite": {L:300,M:240,U:150}, "The Witcher 3": {L:185,M:150,U:110} } },
+{ name: "NVIDIA GeForce RTX 3060 Ti", manufacturer: "NVIDIA", arch: "Ampere", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "200W", furmark: { L: 380, M: 290, U: 200 }, games: { "CS:GO": {L:650,M:550,U:420}, "GTA V": {L:130,M:110,U:90}, "Far Cry 5": {L:140,M:120,U:100}, "Dota 2": {L:250,M:210,U:170}, "Fortnite": {L:280,M:220,U:140}, "The Witcher 3": {L:170,M:140,U:100} } },
+{ name: "NVIDIA GeForce RTX 3060", manufacturer: "NVIDIA", arch: "Ampere", vram: "12 GB", memType: "GDDR6", memSpeed: "15 Gbps", bus: "192-bit", tdp: "170W", furmark: { L: 320, M: 240, U: 170 }, games: { "CS:GO": {L:600,M:500,U:400}, "GTA V": {L:115,M:100,U:80}, "Far Cry 5": {L:125,M:110,U:95}, "Dota 2": {L:230,M:190,U:150}, "Fortnite": {L:250,M:210,U:130}, "The Witcher 3": {L:145,M:120,U:85} } },
+{ name: "NVIDIA GeForce RTX 3050", manufacturer: "NVIDIA", arch: "Ampere", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "128-bit", tdp: "130W", furmark: { L: 240, M: 180, U: 130 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:90,M:80,U:65}, "Far Cry 5": {L:100,M:90,U:75}, "Dota 2": {L:200,M:170,U:130}, "Fortnite": {L:220,M:180,U:120}, "The Witcher 3": {L:120,M:100,U:75} } },
             // --- NVIDIA 20 Series ---
-            { name: "NVIDIA GeForce RTX 2080 Ti", manufacturer: "NVIDIA", arch: "Turing", vram: "11 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "352-bit", tdp: "250W", furmark: { L: 450, M: 340, U: 230 }, games: { "CS:GO": {L:650,M:550,U:450}, "GTA V": {L:160,M:135,U:115}, "Far Cry 5": {L:160,M:140,U:120}, "Dota 2": {L:280,M:250,U:200}, "Fortnite": {L:310,M:240,U:150}, "The Witcher 3": {L:200,M:160,U:110} } },
-            { name: "NVIDIA GeForce RTX 2060", manufacturer: "NVIDIA", arch: "Turing", vram: "6 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "192-bit", tdp: "160W", furmark: { L: 250, M: 180, U: 110 }, games: { "CS:GO": {L:350,M:280,U:180}, "GTA V": {L:130,M:95,U:65}, "Far Cry 5": {L:100,M:80,U:60}, "Dota 2": {L:170,M:140,U:110}, "Fortnite": {L:150,M:110,U:70}, "The Witcher 3": {L:90,M:70,U:50} } },
+    { name: "NVIDIA GeForce RTX 2080 Ti", manufacturer: "NVIDIA", arch: "Turing", vram: "11 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "352-bit", tdp: "250W", furmark: { L: 520, M: 380, U: 260 }, games: { "CS:GO": {L:800,M:700,U:550}, "GTA V": {L:160,M:140,U:120}, "Far Cry 5": {L:175,M:155,U:135}, "Dota 2": {L:310,M:270,U:210}, "Fortnite": {L:350,M:290,U:180}, "The Witcher 3": {L:220,M:180,U:140} } },
+{ name: "NVIDIA GeForce RTX 2080 Super", manufacturer: "NVIDIA", arch: "Turing", vram: "8 GB", memType: "GDDR6", memSpeed: "15.5 Gbps", bus: "256-bit", tdp: "250W", furmark: { L: 470, M: 340, U: 230 }, games: { "CS:GO": {L:750,M:650,U:500}, "GTA V": {L:150,M:130,U:110}, "Far Cry 5": {L:165,M:145,U:125}, "Dota 2": {L:290,M:250,U:190}, "Fortnite": {L:320,M:260,U:160}, "The Witcher 3": {L:200,M:165,U:125} } },
+{ name: "NVIDIA GeForce RTX 2080", manufacturer: "NVIDIA", arch: "Turing", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "215W", furmark: { L: 440, M: 320, U: 215 }, games: { "CS:GO": {L:720,M:620,U:480}, "GTA V": {L:145,M:125,U:105}, "Far Cry 5": {L:160,M:140,U:120}, "Dota 2": {L:280,M:240,U:180}, "Fortnite": {L:300,M:240,U:150}, "The Witcher 3": {L:190,M:155,U:115} } },
+{ name: "NVIDIA GeForce RTX 2070 Super", manufacturer: "NVIDIA", arch: "Turing", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "215W", furmark: { L: 410, M: 300, U: 200 }, games: { "CS:GO": {L:680,M:580,U:450}, "GTA V": {L:135,M:115,U:95}, "Far Cry 5": {L:150,M:130,U:110}, "Dota 2": {L:260,M:220,U:170}, "Fortnite": {L:280,M:220,U:140}, "The Witcher 3": {L:175,M:145,U:105} } },
+{ name: "NVIDIA GeForce RTX 2070", manufacturer: "NVIDIA", arch: "Turing", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "175W", furmark: { L: 370, M: 270, U: 180 }, games: { "CS:GO": {L:650,M:550,U:420}, "GTA V": {L:125,M:105,U:85}, "Far Cry 5": {L:140,M:120,U:100}, "Dota 2": {L:240,M:200,U:150}, "Fortnite": {L:260,M:200,U:130}, "The Witcher 3": {L:160,M:135,U:95} } },
+{ name: "NVIDIA GeForce RTX 2060 Super", manufacturer: "NVIDIA", arch: "Turing", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "175W", furmark: { L: 350, M: 250, U: 170 }, games: { "CS:GO": {L:620,M:520,U:400}, "GTA V": {L:120,M:100,U:80}, "Far Cry 5": {L:135,M:115,U:95}, "Dota 2": {L:230,M:190,U:140}, "Fortnite": {L:250,M:190,U:120}, "The Witcher 3": {L:150,M:125,U:90} } },
+{ name: "NVIDIA GeForce RTX 2060", manufacturer: "NVIDIA", arch: "Turing", vram: "6 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "192-bit", tdp: "160W", furmark: { L: 300, M: 220, U: 150 }, games: { "CS:GO": {L:580,M:480,U:350}, "GTA V": {L:110,M:90,U:70}, "Far Cry 5": {L:120,M:100,U:85}, "Dota 2": {L:210,M:170,U:130}, "Fortnite": {L:230,M:170,U:110}, "The Witcher 3": {L:135,M:110,U:80} } },
+{ name: "NVIDIA GeForce RTX 2050", manufacturer: "NVIDIA", arch: "Ampere", vram: "4 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "64-bit", tdp: "45W", furmark: { L: 180, M: 130, U: 90 }, games: { "CS:GO": {L:450,M:350,U:250}, "GTA V": {L:85,M:70,U:55}, "Far Cry 5": {L:90,M:75,U:60}, "Dota 2": {L:180,M:140,U:110}, "Fortnite": {L:190,M:140,U:95}, "The Witcher 3": {L:110,M:85,U:60} } },
 
-            // --- NVIDIA 16/10/900/700 Series ---
-            { name: "NVIDIA GeForce GTX 1660 Super", manufacturer: "NVIDIA", arch: "Turing", vram: "6 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "192-bit", tdp: "125W", furmark: { L: 200, M: 140, U: 80 }, games: { "CS:GO": {L:300,M:240,U:160}, "GTA V": {L:115,M:85,U:60}, "Far Cry 5": {L:85,M:70,U:50}, "Dota 2": {L:150,M:120,U:90}, "Fortnite": {L:130,M:100,U:65}, "The Witcher 3": {L:80,M:60,U:40} } },
-            { name: "NVIDIA GeForce GTX 1080 Ti", manufacturer: "NVIDIA", arch: "Pascal", vram: "11 GB", memType: "GDDR5X", memSpeed: "11 Gbps", bus: "352-bit", tdp: "250W", furmark: { L: 380, M: 280, U: 180 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:145,M:120,U:90}, "Far Cry 5": {L:130,M:110,U:90}, "Dota 2": {L:240,M:200,U:160}, "Fortnite": {L:250,M:190,U:120}, "The Witcher 3": {L:160,M:120,U:80} } },
-            { name: "NVIDIA GeForce GTX 1060 6GB", manufacturer: "NVIDIA", arch: "Pascal", vram: "6 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "192-bit", tdp: "120W", furmark: { L: 140, M: 90, U: 50 }, games: { "CS:GO": {L:260,M:200,U:130}, "GTA V": {L:95,M:75,U:50}, "Far Cry 5": {L:75,M:60,U:40}, "Dota 2": {L:130,M:110,U:80}, "Fortnite": {L:110,M:80,U:50}, "The Witcher 3": {L:65,M:50,U:35} } },
-            { name: "NVIDIA GeForce GTX 1050 Ti", manufacturer: "NVIDIA", arch: "Pascal", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "128-bit", tdp: "75W", furmark: { L: 80, M: 50, U: 25 }, games: { "CS:GO": {L:180,M:120,U:80}, "GTA V": {L:60,M:45,U:30}, "Far Cry 5": {L:45,M:35,U:25}, "Dota 2": {L:90,M:70,U:50}, "Fortnite": {L:70,M:50,U:30}, "The Witcher 3": {L:40,M:30,U:20} } },
-            { name: "NVIDIA GeForce GTX 980", manufacturer: "NVIDIA", arch: "Maxwell", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "256-bit", tdp: "165W", furmark: { L: 130, M: 85, U: 45 }, games: { "CS:GO": {L:240,M:180,U:120}, "GTA V": {L:90,M:70,U:45}, "Far Cry 5": {L:70,M:55,U:35}, "Dota 2": {L:120,M:100,U:75}, "Fortnite": {L:100,M:75,U:45}, "The Witcher 3": {L:60,M:45,U:30} } },
-            { name: "NVIDIA GeForce GTX 970", manufacturer: "NVIDIA", arch: "Maxwell", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "256-bit", tdp: "145W", furmark: { L: 110, M: 70, U: 35 }, games: { "CS:GO": {L:220,M:160,U:110}, "GTA V": {L:80,M:60,U:40}, "Far Cry 5": {L:60,M:45,U:30}, "Dota 2": {L:110,M:90,U:65}, "Fortnite": {L:90,M:65,U:40}, "The Witcher 3": {L:50,M:35,U:25} } },
-            { name: "NVIDIA GeForce GTX 750 Ti", manufacturer: "NVIDIA", arch: "Maxwell", vram: "2 GB", memType: "GDDR5", memSpeed: "5.4 Gbps", bus: "128-bit", tdp: "60W", furmark: { L: 45, M: 25, U: 10 }, games: { "CS:GO": {L:120,M:80,U:50}, "GTA V": {L:40,M:30,U:20}, "Far Cry 5": {L:30,M:20,U:15}, "Dota 2": {L:60,M:45,U:30}, "Fortnite": {L:50,M:35,U:20}, "The Witcher 3": {L:25,M:15,U:10} } },
+            // --- NVIDIA 16 Series (Turing - No Ray Tracing) ---
+{ name: "NVIDIA GeForce GTX 1660 Ti", manufacturer: "NVIDIA", arch: "Turing", vram: "6 GB", memType: "GDDR6", memSpeed: "12 Gbps", bus: "192-bit", tdp: "120W", furmark: { L: 280, M: 210, U: 140 }, games: { "CS:GO": {L:550,M:450,U:350}, "GTA V": {L:110,M:95,U:75}, "Far Cry 5": {L:120,M:100,U:80}, "Dota 2": {L:220,M:180,U:140}, "Fortnite": {L:230,M:180,U:130}, "The Witcher 3": {L:130,M:110,U:85} } },
+{ name: "NVIDIA GeForce GTX 1660 Super", manufacturer: "NVIDIA", arch: "Turing", vram: "6 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "192-bit", tdp: "125W", furmark: { L: 270, M: 200, U: 135 }, games: { "CS:GO": {L:530,M:430,U:330}, "GTA V": {L:105,M:90,U:70}, "Far Cry 5": {L:115,M:95,U:75}, "Dota 2": {L:210,M:170,U:130}, "Fortnite": {L:220,M:170,U:120}, "The Witcher 3": {L:125,M:105,U:80} } },
+{ name: "NVIDIA GeForce GTX 1650", manufacturer: "NVIDIA", arch: "Turing", vram: "4 GB", memType: "GDDR5/6", memSpeed: "8/12 Gbps", bus: "128-bit", tdp: "75W", furmark: { L: 160, M: 110, U: 70 }, games: { "CS:GO": {L:350,M:280,U:180}, "GTA V": {L:75,M:60,U:45}, "Far Cry 5": {L:80,M:65,U:50}, "Dota 2": {L:150,M:120,U:90}, "Fortnite": {L:160,M:120,U:80}, "The Witcher 3": {L:85,M:65,U:45} } },
 
-            // --- AMD 7000/8000/9000 Series ---
-            { name: "AMD Radeon RX 9900 XTX", manufacturer: "AMD", arch: "RDNA 5", vram: "32 GB", memType: "GDDR7", memSpeed: "30 Gbps", bus: "384-bit", tdp: "400W", furmark: { L: 920, M: 720, U: 520 }, games: { "CS:GO": {L:999,M:920,U:810}, "GTA V": {L:260,M:230,U:210}, "Far Cry 5": {L:270,M:250,U:230}, "Dota 2": {L:460,M:410,U:360}, "Fortnite": {L:510,M:460,U:310}, "The Witcher 3": {L:360,M:310,U:260} } },
-            { name: "AMD Radeon RX 7900 XTX", manufacturer: "AMD", arch: "RDNA 3", vram: "24 GB", memType: "GDDR6", memSpeed: "20 Gbps", bus: "384-bit", tdp: "355W", furmark: { L: 600, M: 450, U: 300 }, games: { "CS:GO": {L:850,M:750,U:580}, "GTA V": {L:180,M:155,U:135}, "Far Cry 5": {L:190,M:175,U:155}, "Dota 2": {L:330,M:280,U:220}, "Fortnite": {L:380,M:300,U:190}, "The Witcher 3": {L:260,M:210,U:140} } },
-            { name: "AMD Radeon RX 7800 XT", manufacturer: "AMD", arch: "RDNA 3", vram: "16 GB", memType: "GDDR6", memSpeed: "19.5 Gbps", bus: "256-bit", tdp: "263W", furmark: { L: 450, M: 330, U: 220 }, games: { "CS:GO": {L:680,M:580,U:450}, "GTA V": {L:155,M:125,U:105}, "Far Cry 5": {L:155,M:135,U:115}, "Dota 2": {L:290,M:250,U:190}, "Fortnite": {L:300,M:230,U:150}, "The Witcher 3": {L:200,M:160,U:110} } },
-            { name: "AMD Radeon RX 7600", manufacturer: "AMD", arch: "RDNA 3", vram: "8 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "128-bit", tdp: "165W", furmark: { L: 260, M: 180, U: 110 }, games: { "CS:GO": {L:380,M:290,U:190}, "GTA V": {L:135,M:95,U:70}, "Far Cry 5": {L:105,M:85,U:65}, "Dota 2": {L:175,M:145,U:115}, "Fortnite": {L:155,M:115,U:75}, "The Witcher 3": {L:95,M:75,U:50} } },
+             // --- NVIDIA 10 Series (Pascal - Complete) ---
+{ name: "NVIDIA GeForce GTX 1080 Ti", manufacturer: "NVIDIA", arch: "Pascal", vram: "11 GB", memType: "GDDR5X", memSpeed: "11 Gbps", bus: "352-bit", tdp: "250W", furmark: { L: 450, M: 330, U: 220 }, games: { "CS:GO": {L:750,M:650,U:500}, "GTA V": {L:145,M:125,U:105}, "Far Cry 5": {L:155,M:135,U:115}, "Dota 2": {L:300,M:250,U:190}, "Fortnite": {L:320,M:240,U:160}, "The Witcher 3": {L:180,M:150,U:110} } },
+{ name: "NVIDIA GeForce GTX 1080", manufacturer: "NVIDIA", arch: "Pascal", vram: "8 GB", memType: "GDDR5X", memSpeed: "10 Gbps", bus: "256-bit", tdp: "180W", furmark: { L: 380, M: 280, U: 190 }, games: { "CS:GO": {L:680,M:580,U:450}, "GTA V": {L:125,M:110,U:90}, "Far Cry 5": {L:135,M:120,U:100}, "Dota 2": {L:260,M:220,U:170}, "Fortnite": {L:280,M:220,U:140}, "The Witcher 3": {L:155,M:130,U:95} } },
+{ name: "NVIDIA GeForce GTX 1070 Ti", manufacturer: "NVIDIA", arch: "Pascal", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "180W", furmark: { L: 350, M: 265, U: 185 }, games: { "CS:GO": {L:650,M:550,U:430}, "GTA V": {L:120,M:105,U:85}, "Far Cry 5": {L:130,M:115,U:95}, "Dota 2": {L:250,M:210,U:165}, "Fortnite": {L:270,M:215,U:145}, "The Witcher 3": {L:150,M:125,U:90} } },
+{ name: "NVIDIA GeForce GTX 1070", manufacturer: "NVIDIA", arch: "Pascal", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "150W", furmark: { L: 320, M: 240, U: 160 }, games: { "CS:GO": {L:600,M:500,U:400}, "GTA V": {L:110,M:95,U:80}, "Far Cry 5": {L:120,M:105,U:90}, "Dota 2": {L:230,M:190,U:150}, "Fortnite": {L:250,M:200,U:130}, "The Witcher 3": {L:135,M:110,U:80} } },
+{ name: "NVIDIA GeForce GTX 1060 (6GB)", manufacturer: "NVIDIA", arch: "Pascal", vram: "6 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "192-bit", tdp: "120W", furmark: { L: 260, M: 190, U: 130 }, games: { "CS:GO": {L:520,M:420,U:320}, "GTA V": {L:95,M:80,U:65}, "Far Cry 5": {L:105,M:90,U:75}, "Dota 2": {L:200,M:170,U:130}, "Fortnite": {L:210,M:170,U:120}, "The Witcher 3": {L:110,M:90,U:65} } },
+{ name: "NVIDIA GeForce GTX 1060 (3GB)", manufacturer: "NVIDIA", arch: "Pascal", vram: "3 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "192-bit", tdp: "120W", furmark: { L: 240, M: 175, U: 120 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:90,M:75,U:60}, "Far Cry 5": {L:100,M:85,U:70}, "Dota 2": {L:190,M:160,U:120}, "Fortnite": {L:200,M:160,U:110}, "The Witcher 3": {L:100,M:80,U:55} } },
+{ name: "NVIDIA GeForce GTX 1050 Ti", manufacturer: "NVIDIA", arch: "Pascal", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "128-bit", tdp: "75W", furmark: { L: 180, M: 130, U: 85 }, games: { "CS:GO": {L:420,M:320,U:220}, "GTA V": {L:80,M:65,U:45}, "Far Cry 5": {L:85,M:70,U:50}, "Dota 2": {L:160,M:130,U:100}, "Fortnite": {L:170,M:130,U:90}, "The Witcher 3": {L:80,M:60,U:40} } },
+{ name: "NVIDIA GeForce GTX 1050", manufacturer: "NVIDIA", arch: "Pascal", vram: "2 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "128-bit", tdp: "75W", furmark: { L: 150, M: 100, U: 65 }, games: { "CS:GO": {L:380,M:280,U:180}, "GTA V": {L:70,M:55,U:35}, "Far Cry 5": {L:75,M:60,U:40}, "Dota 2": {L:140,M:110,U:80}, "Fortnite": {L:150,M:110,U:75}, "The Witcher 3": {L:65,M:45,U:30} } },
+{ name: "NVIDIA GeForce GT 1030", manufacturer: "NVIDIA", arch: "Pascal", vram: "2 GB", memType: "GDDR5", memSpeed: "6 Gbps", bus: "64-bit", tdp: "30W", furmark: { L: 70, M: 45, U: 25 }, games: { "CS:GO": {L:220,M:150,U:90}, "GTA V": {L:45,M:35,U:20}, "Far Cry 5": {L:40,M:30,U:15}, "Dota 2": {L:100,M:75,U:50}, "Fortnite": {L:110,M:75,U:50}, "The Witcher 3": {L:35,M:25,U:15} } },
+
+             // --- NVIDIA 900 Series (Maxwell - Complete) ---
+{ name: "NVIDIA GeForce GTX 980 Ti", manufacturer: "NVIDIA", arch: "Maxwell", vram: "6 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "384-bit", tdp: "250W", furmark: { L: 340, M: 250, U: 170 }, games: { "CS:GO": {L:620,M:520,U:400}, "GTA V": {L:120,M:105,U:85}, "Far Cry 5": {L:130,M:110,U:95}, "Dota 2": {L:240,M:200,U:150}, "Fortnite": {L:260,M:200,U:130}, "The Witcher 3": {L:145,M:120,U:85} } },
+{ name: "NVIDIA GeForce GTX 980", manufacturer: "NVIDIA", arch: "Maxwell", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "256-bit", tdp: "165W", furmark: { L: 280, M: 210, U: 140 }, games: { "CS:GO": {L:580,M:480,U:380}, "GTA V": {L:110,M:95,U:75}, "Far Cry 5": {L:115,M:100,U:85}, "Dota 2": {L:220,M:180,U:140}, "Fortnite": {L:230,M:180,U:120}, "The Witcher 3": {L:125,M:105,U:75} } },
+{ name: "NVIDIA GeForce GTX 970", manufacturer: "NVIDIA", arch: "Maxwell", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "224-bit", tdp: "145W", furmark: { L: 240, M: 180, U: 120 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:90,M:75,U:60}, "Far Cry 5": {L:95,M:80,U:65}, "Dota 2": {L:190,M:160,U:120}, "Fortnite": {L:200,M:160,U:110}, "The Witcher 3": {L:100,M:85,U:60} } },
+{ name: "NVIDIA GeForce GTX 960", manufacturer: "NVIDIA", arch: "Maxwell", vram: "2 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "128-bit", tdp: "120W", furmark: { L: 180, M: 130, U: 90 }, games: { "CS:GO": {L:420,M:320,U:220}, "GTA V": {L:75,M:60,U:45}, "Far Cry 5": {L:80,M:65,U:50}, "Dota 2": {L:160,M:130,U:100}, "Fortnite": {L:170,M:130,U:90}, "The Witcher 3": {L:80,M:60,U:40} } },
+{ name: "NVIDIA GeForce GTX 950", manufacturer: "NVIDIA", arch: "Maxwell", vram: "2 GB", memType: "GDDR5", memSpeed: "6.6 Gbps", bus: "128-bit", tdp: "90W", furmark: { L: 140, M: 100, U: 65 }, games: { "CS:GO": {L:350,M:250,U:180}, "GTA V": {L:65,M:50,U:35}, "Far Cry 5": {L:70,M:55,U:40}, "Dota 2": {L:140,M:110,U:80}, "Fortnite": {L:150,M:110,U:75}, "The Witcher 3": {L:65,M:45,U:30} } },
+
+             // --- NVIDIA 700 Series (Kepler - Complete) ---
+{ name: "NVIDIA GeForce GTX 780 Ti", manufacturer: "NVIDIA", arch: "Kepler", vram: "3 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "384-bit", tdp: "250W", furmark: { L: 220, M: 160, U: 110 }, games: { "CS:GO": {L:480,M:380,U:280}, "GTA V": {L:85,M:70,U:55}, "Far Cry 5": {L:90,M:75,U:60}, "Dota 2": {L:180,M:150,U:110}, "Fortnite": {L:190,M:150,U:100}, "The Witcher 3": {L:95,M:75,U:55} } },
+{ name: "NVIDIA GeForce GTX 780", manufacturer: "NVIDIA", arch: "Kepler", vram: "3 GB", memType: "GDDR5", memSpeed: "6 Gbps", bus: "384-bit", tdp: "250W", furmark: { L: 190, M: 140, U: 95 }, games: { "CS:GO": {L:440,M:340,U:240}, "GTA V": {L:75,M:60,U:45}, "Far Cry 5": {L:80,M:65,U:50}, "Dota 2": {L:160,M:130,U:90}, "Fortnite": {L:170,M:130,U:90}, "The Witcher 3": {L:85,M:65,U:45} } },
+{ name: "NVIDIA GeForce GTX 770", manufacturer: "NVIDIA", arch: "Kepler", vram: "2 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "256-bit", tdp: "230W", furmark: { L: 160, M: 115, U: 80 }, games: { "CS:GO": {L:400,M:300,U:200}, "GTA V": {L:65,M:55,U:40}, "Far Cry 5": {L:70,M:55,U:40}, "Dota 2": {L:140,M:110,U:80}, "Fortnite": {L:150,M:110,U:75}, "The Witcher 3": {L:75,M:55,U:35} } },
+{ name: "NVIDIA GeForce GTX 760", manufacturer: "NVIDIA", arch: "Kepler", vram: "2 GB", memType: "GDDR5", memSpeed: "6 Gbps", bus: "256-bit", tdp: "170W", furmark: { L: 130, M: 95, U: 65 }, games: { "CS:GO": {L:350,M:260,U:170}, "GTA V": {L:55,M:45,U:30}, "Far Cry 5": {L:60,M:45,U:30}, "Dota 2": {L:120,M:95,U:65}, "Fortnite": {L:130,M:95,U:60}, "The Witcher 3": {L:60,M:45,U:25} } },
+{ name: "NVIDIA GeForce GTX 750 Ti", manufacturer: "NVIDIA", arch: "Maxwell", vram: "2 GB", memType: "GDDR5", memSpeed: "5.4 Gbps", bus: "128-bit", tdp: "60W", furmark: { L: 90, M: 65, U: 40 }, games: { "CS:GO": {L:280,M:190,U:120}, "GTA V": {L:50,M:40,U:25}, "Far Cry 5": {L:45,M:35,U:20}, "Dota 2": {L:110,M:85,U:55}, "Fortnite": {L:120,M:85,U:55}, "The Witcher 3": {L:40,M:30,U:20} } },
+{ name: "NVIDIA GeForce GTX 750", manufacturer: "NVIDIA", arch: "Maxwell", vram: "1 GB", memType: "GDDR5", memSpeed: "5 Gbps", bus: "128-bit", tdp: "55W", furmark: { L: 75, M: 50, U: 30 }, games: { "CS:GO": {L:240,M:160,U:100}, "GTA V": {L:40,M:30,U:20}, "Far Cry 5": {L:35,M:25,U:15}, "Dota 2": {L:90,M:70,U:45}, "Fortnite": {L:100,M:70,U:45}, "The Witcher 3": {L:30,M:20,U:15} } },
+{ name: "NVIDIA GeForce GT 730", manufacturer: "NVIDIA", arch: "Fermi/Kepler", vram: "2 GB", memType: "DDR3/GDDR5", memSpeed: "1.8/5 Gbps", bus: "64-bit", tdp: "38W", furmark: { L: 40, M: 25, U: 15 }, games: { "CS:GO": {L:120,M:80,U:40}, "GTA V": {L:25,M:18,U:10}, "Far Cry 5": {L:20,M:15,U:5}, "Dota 2": {L:60,M:40,U:25}, "Fortnite": {L:65,M:40,U:25}, "The Witcher 3": {L:15,M:10,U:5} } },
+
+            // --- AMD Radeon RX 9000 Series (RDNA 4 - Latest 2025) ---
+{ name: "AMD Radeon RX 9070 XT", manufacturer: "AMD", arch: "RDNA 4", vram: "16 GB", memType: "GDDR6", memSpeed: "20 Gbps", bus: "256-bit", tdp: "300W", furmark: { L: 780, M: 580, U: 420 }, games: { "CS:GO": {L:950,M:850,U:750}, "GTA V": {L:220,M:190,U:165}, "Far Cry 5": {L:230,M:210,U:190}, "Dota 2": {L:410,M:370,U:320}, "Fortnite": {L:460,M:410,U:290}, "The Witcher 3": {L:310,M:270,U:220} } },
+{ name: "AMD Radeon RX 9070", manufacturer: "AMD", arch: "RDNA 4", vram: "16 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "256-bit", tdp: "220W", furmark: { L: 650, M: 480, U: 340 }, games: { "CS:GO": {L:900,M:800,U:700}, "GTA V": {L:200,M:175,U:150}, "Far Cry 5": {L:210,M:190,U:170}, "Dota 2": {L:380,M:340,U:290}, "Fortnite": {L:420,M:370,U:260}, "The Witcher 3": {L:280,M:240,U:200} } },
+{ name: "AMD Radeon RX 9060 XT", manufacturer: "AMD", arch: "RDNA 4", vram: "16 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "128-bit", tdp: "160W", furmark: { L: 480, M: 360, U: 250 }, games: { "CS:GO": {L:800,M:700,U:600}, "GTA V": {L:160,M:140,U:120}, "Far Cry 5": {L:175,M:155,U:135}, "Dota 2": {L:320,M:280,U:230}, "Fortnite": {L:350,M:300,U:210}, "The Witcher 3": {L:220,M:190,U:155} } },
+
+// --- AMD Radeon RX 7000 Series (RDNA 3) ---
+{ name: "AMD Radeon RX 7900 XTX", manufacturer: "AMD", arch: "RDNA 3", vram: "24 GB", memType: "GDDR6", memSpeed: "20 Gbps", bus: "384-bit", tdp: "355W", furmark: { L: 800, M: 620, U: 450 }, games: { "CS:GO": {L:980,M:880,U:780}, "GTA V": {L:225,M:195,U:175}, "Far Cry 5": {L:235,M:215,U:195}, "Dota 2": {L:410,M:370,U:330}, "Fortnite": {L:470,M:415,U:280}, "The Witcher 3": {L:315,M:275,U:225} } },
+{ name: "AMD Radeon RX 7900 XT", manufacturer: "AMD", arch: "RDNA 3", vram: "20 GB", memType: "GDDR6", memSpeed: "20 Gbps", bus: "320-bit", tdp: "315W", furmark: { L: 690, M: 530, U: 380 }, games: { "CS:GO": {L:920,M:820,U:720}, "GTA V": {L:205,M:180,U:160}, "Far Cry 5": {L:215,M:195,U:175}, "Dota 2": {L:380,M:340,U:300}, "Fortnite": {L:430,M:380,U:260}, "The Witcher 3": {L:285,M:245,U:205} } },
+{ name: "AMD Radeon RX 7800 XT", manufacturer: "AMD", arch: "RDNA 3", vram: "16 GB", memType: "GDDR6", memSpeed: "19.5 Gbps", bus: "256-bit", tdp: "263W", furmark: { L: 520, M: 400, U: 280 }, games: { "CS:GO": {L:820,M:720,U:620}, "GTA V": {L:175,M:155,U:135}, "Far Cry 5": {L:185,M:165,U:145}, "Dota 2": {L:330,M:290,U:240}, "Fortnite": {L:370,M:320,U:220}, "The Witcher 3": {L:230,M:195,U:160} } },
+{ name: "AMD Radeon RX 7700 XT", manufacturer: "AMD", arch: "RDNA 3", vram: "12 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "192-bit", tdp: "245W", furmark: { L: 440, M: 340, U: 240 }, games: { "CS:GO": {L:760,M:660,U:560}, "GTA V": {L:155,M:135,U:115}, "Far Cry 5": {L:165,M:145,U:125}, "Dota 2": {L:300,M:260,U:210}, "Fortnite": {L:330,M:280,U:195}, "The Witcher 3": {L:200,M:170,U:140} } },
+{ name: "AMD Radeon RX 7600 XT", manufacturer: "AMD", arch: "RDNA 3", vram: "16 GB", memType: "GDDR6", memSpeed: "18 Gbps", bus: "128-bit", tdp: "190W", furmark: { L: 350, M: 260, U: 180 }, games: { "CS:GO": {L:680,M:580,U:480}, "GTA V": {L:135,M:120,U:100}, "Far Cry 5": {L:145,M:125,U:110}, "Dota 2": {L:260,M:220,U:180}, "Fortnite": {L:290,M:250,U:170}, "The Witcher 3": {L:170,M:145,U:120} } },
 
             // --- AMD 6000 Series ---
             { name: "AMD Radeon RX 6900 XT", manufacturer: "AMD", arch: "RDNA 2", vram: "16 GB", memType: "GDDR6", memSpeed: "16 Gbps", bus: "256-bit", tdp: "300W", furmark: { L: 520, M: 390, U: 260 }, games: { "CS:GO": {L:780,M:680,U:520}, "GTA V": {L:168,M:142,U:122}, "Far Cry 5": {L:175,M:155,U:135}, "Dota 2": {L:315,M:275,U:215}, "Fortnite": {L:350,M:280,U:175}, "The Witcher 3": {L:235,M:185,U:125} } },
             { name: "AMD Radeon RX 6700 XT", manufacturer: "AMD", arch: "RDNA 2", vram: "12 GB", memType: "GDDR6", memSpeed: "16 Gbps", bus: "192-bit", tdp: "230W", furmark: { L: 350, M: 250, U: 160 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:145,M:115,U:90}, "Far Cry 5": {L:135,M:115,U:95}, "Dota 2": {L:230,M:200,U:160}, "Fortnite": {L:240,M:180,U:110}, "The Witcher 3": {L:150,M:120,U:80} } },
             { name: "AMD Radeon RX 6600", manufacturer: "AMD", arch: "RDNA 2", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "128-bit", tdp: "132W", furmark: { L: 220, M: 150, U: 90 }, games: { "CS:GO": {L:320,M:240,U:160}, "GTA V": {L:120,M:90,U:65}, "Far Cry 5": {L:95,M:75,U:55}, "Dota 2": {L:160,M:130,U:100}, "Fortnite": {L:140,M:105,U:70}, "The Witcher 3": {L:85,M:65,U:45} } },
 
-            // --- AMD 5000/Vega/500/400 Series ---
-            { name: "AMD Radeon RX 5700 XT", manufacturer: "AMD", arch: "RDNA", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "225W", furmark: { L: 300, M: 210, U: 130 }, games: { "CS:GO": {L:450,M:350,U:250}, "GTA V": {L:135,M:105,U:80}, "Far Cry 5": {L:120,M:100,U:80}, "Dota 2": {L:210,M:180,U:140}, "Fortnite": {L:220,M:160,U:100}, "The Witcher 3": {L:130,M:100,U:70} } },
-            { name: "AMD Radeon RX Vega 64", manufacturer: "AMD", arch: "GCN 5.0", vram: "8 GB", memType: "HBM2", memSpeed: "1.89 Gbps", bus: "2048-bit", tdp: "295W", furmark: { L: 280, M: 190, U: 110 }, games: { "CS:GO": {L:400,M:320,U:220}, "GTA V": {L:125,M:95,U:75}, "Far Cry 5": {L:110,M:90,U:70}, "Dota 2": {L:200,M:170,U:130}, "Fortnite": {L:200,M:150,U:90}, "The Witcher 3": {L:120,M:90,U:60} } },
-            { name: "AMD Radeon RX 580", manufacturer: "AMD", arch: "Polaris 20", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "185W", furmark: { L: 140, M: 90, U: 45 }, games: { "CS:GO": {L:250,M:180,U:120}, "GTA V": {L:90,M:70,U:45}, "Far Cry 5": {L:70,M:55,U:40}, "Dota 2": {L:120,M:100,U:80}, "Fortnite": {L:100,M:80,U:50}, "The Witcher 3": {L:60,M:45,U:30} } },
-            { name: "AMD Radeon RX 570", manufacturer: "AMD", arch: "Polaris 20", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "256-bit", tdp: "150W", furmark: { L: 120, M: 75, U: 35 }, games: { "CS:GO": {L:220,M:160,U:110}, "GTA V": {L:80,M:60,U:40}, "Far Cry 5": {L:60,M:45,U:30}, "Dota 2": {L:110,M:90,U:70}, "Fortnite": {L:90,M:70,U:40}, "The Witcher 3": {L:50,M:40,U:25} } },
-            { name: "AMD Radeon RX 480", manufacturer: "AMD", arch: "Polaris 10", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "150W", furmark: { L: 130, M: 85, U: 40 }, games: { "CS:GO": {L:240,M:170,U:115}, "GTA V": {L:85,M:65,U:42}, "Far Cry 5": {L:65,M:50,U:35}, "Dota 2": {L:115,M:95,U:75}, "Fortnite": {L:95,M:75,U:45}, "The Witcher 3": {L:55,M:42,U:28} } }
+         
+         // --- AMD Radeon RX 5000 Series (RDNA 1) ---
+{ name: "AMD Radeon RX 5700 XT", manufacturer: "AMD", arch: "RDNA 1", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "225W", furmark: { L: 460, M: 340, U: 230 }, games: { "CS:GO": {L:780,M:680,U:550}, "GTA V": {L:150,M:130,U:110}, "Far Cry 5": {L:160,M:140,U:120}, "Dota 2": {L:290,M:250,U:200}, "Fortnite": {L:320,M:260,U:180}, "The Witcher 3": {L:195,M:165,U:130} } },
+{ name: "AMD Radeon RX 5700", manufacturer: "AMD", arch: "RDNA 1", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "256-bit", tdp: "180W", furmark: { L: 410, M: 300, U: 200 }, games: { "CS:GO": {L:720,M:620,U:500}, "GTA V": {L:140,M:120,U:100}, "Far Cry 5": {L:150,M:130,U:110}, "Dota 2": {L:270,M:230,U:185}, "Fortnite": {L:290,M:240,U:160}, "The Witcher 3": {L:175,M:150,U:115} } },
+{ name: "AMD Radeon RX 5600 XT", manufacturer: "AMD", arch: "RDNA 1", vram: "6 GB", memType: "GDDR6", memSpeed: "12 Gbps", bus: "192-bit", tdp: "150W", furmark: { L: 370, M: 270, U: 180 }, games: { "CS:GO": {L:680,M:580,U:460}, "GTA V": {L:130,M:110,U:90}, "Far Cry 5": {L:140,M:120,U:100}, "Dota 2": {L:250,M:210,U:170}, "Fortnite": {L:270,M:220,U:145}, "The Witcher 3": {L:160,M:135,U:100} } },
+{ name: "AMD Radeon RX 5500 XT", manufacturer: "AMD", arch: "RDNA 1", vram: "8 GB", memType: "GDDR6", memSpeed: "14 Gbps", bus: "128-bit", tdp: "130W", furmark: { L: 260, M: 190, U: 130 }, games: { "CS:GO": {L:520,M:420,U:320}, "GTA V": {L:95,M:80,U:65}, "Far Cry 5": {L:105,M:90,U:75}, "Dota 2": {L:200,M:170,U:130}, "Fortnite": {L:210,M:170,U:120}, "The Witcher 3": {L:110,M:90,U:65} } },
+
+// --- AMD Radeon Vega Series ---
+{ name: "AMD Radeon RX Vega 64", manufacturer: "AMD", arch: "Vega", vram: "8 GB", memType: "HBM2", memSpeed: "1.9 Gbps", bus: "2048-bit", tdp: "295W", furmark: { L: 430, M: 320, U: 210 }, games: { "CS:GO": {L:750,M:650,U:520}, "GTA V": {L:145,M:125,U:105}, "Far Cry 5": {L:155,M:135,U:115}, "Dota 2": {L:280,M:240,U:190}, "Fortnite": {L:310,M:250,U:170}, "The Witcher 3": {L:185,M:155,U:120} } },
+{ name: "AMD Radeon RX Vega 56", manufacturer: "AMD", arch: "Vega", vram: "8 GB", memType: "HBM2", memSpeed: "1.6 Gbps", bus: "2048-bit", tdp: "210W", furmark: { L: 380, M: 280, U: 185 }, games: { "CS:GO": {L:700,M:600,U:480}, "GTA V": {L:130,M:115,U:95}, "Far Cry 5": {L:140,M:125,U:105}, "Dota 2": {L:260,M:220,U:175}, "Fortnite": {L:280,M:230,U:150}, "The Witcher 3": {L:165,M:140,U:110} } },
+
+// --- AMD Radeon RX 500 Series (Polaris Refresh) ---
+{ name: "AMD Radeon RX 590", manufacturer: "AMD", arch: "Polaris", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "225W", furmark: { L: 310, M: 230, U: 155 }, games: { "CS:GO": {L:620,M:520,U:400}, "GTA V": {L:115,M:100,U:80}, "Far Cry 5": {L:125,M:110,U:90}, "Dota 2": {L:230,M:190,U:150}, "Fortnite": {L:250,M:210,U:140}, "The Witcher 3": {L:145,M:120,U:90} } },
+{ name: "AMD Radeon RX 580", manufacturer: "AMD", arch: "Polaris", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "185W", furmark: { L: 280, M: 210, U: 140 }, games: { "CS:GO": {L:580,M:480,U:350}, "GTA V": {L:105,M:90,U:75}, "Far Cry 5": {L:115,M:100,U:80}, "Dota 2": {L:210,M:170,U:135}, "Fortnite": {L:230,M:180,U:130}, "The Witcher 3": {L:135,M:110,U:80} } },
+{ name: "AMD Radeon RX 570", manufacturer: "AMD", arch: "Polaris", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "256-bit", tdp: "150W", furmark: { L: 240, M: 180, U: 120 }, games: { "CS:GO": {L:520,M:420,U:320}, "GTA V": {L:95,M:80,U:65}, "Far Cry 5": {L:100,M:85,U:70}, "Dota 2": {L:190,M:160,U:125}, "Fortnite": {L:210,M:165,U:120}, "The Witcher 3": {L:120,M:100,U:70} } },
+{ name: "AMD Radeon RX 550", manufacturer: "AMD", arch: "Lexa", vram: "4 GB", memType: "GDDR5", memSpeed: "7 Gbps", bus: "128-bit", tdp: "50W", furmark: { L: 110, M: 80, U: 50 }, games: { "CS:GO": {L:300,M:220,U:150}, "GTA V": {L:60,M:45,U:30}, "Far Cry 5": {L:55,M:40,U:25}, "Dota 2": {L:130,M:100,U:70}, "Fortnite": {L:140,M:100,U:65}, "The Witcher 3": {L:50,M:40,U:25} } },
+
+// --- AMD Radeon RX 400 Series (Polaris Original) ---
+{ name: "AMD Radeon RX 480", manufacturer: "AMD", arch: "Polaris", vram: "8 GB", memType: "GDDR5", memSpeed: "8 Gbps", bus: "256-bit", tdp: "150W", furmark: { L: 270, M: 200, U: 135 }, games: { "CS:GO": {L:560,M:460,U:330}, "GTA V": {L:100,M:85,U:70}, "Far Cry 5": {L:110,M:95,U:75}, "Dota 2": {L:200,M:165,U:130}, "Fortnite": {L:220,M:170,U:125}, "The Witcher 3": {L:130,M:105,U:75} } },
+{ name: "AMD Radeon RX 470", manufacturer: "AMD", arch: "Polaris", vram: "4 GB", memType: "GDDR5", memSpeed: "6.6 Gbps", bus: "256-bit", tdp: "120W", furmark: { L: 230, M: 170, U: 115 }, games: { "CS:GO": {L:500,M:400,U:300}, "GTA V": {L:90,M:75,U:60}, "Far Cry 5": {L:95,M:80,U:65}, "Dota 2": {L:180,M:150,U:120}, "Fortnite": {L:200,M:150,U:110}, "The Witcher 3": {L:115,M:95,U:65} } },
+
         ];
 
         let selectedGPU = { a: null, b: null };
@@ -511,5 +572,3 @@
     </script>
 </body>
 </html>
-
-
